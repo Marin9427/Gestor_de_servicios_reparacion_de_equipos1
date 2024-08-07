@@ -60,26 +60,26 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
+                    <i class="fas fa-fw fa-wrench"></i>
                     <span>Reparacion</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Opciones:</h6>
-                        <a class="collapse-item" href="ReparacionProceso.html">En proceso</a>
-                        <a class="collapse-item" href="cards.html">Finalizados</a>
+                        <a class="collapse-item" href="AltaServicio.html" >  <i class="fas fa-solid fa-plus fa-bounce"></i> </i> Registrar nuevo servicio</a>
+                        <a class="collapse-item" href="ReparacionProceso.html">  <i class="fas fa-solid fa-spinner fa-spin"></i> En proceso</a>
+                        <a class="collapse-item" href="cards.html"> <i class="fas fa-duotone fa-flag-checkered fa-bounce"></i> Finalizados</a>
                     </div>
                 </div>
             </li>
-
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-            <a class="nav-link " href="utilities-other.html">
-                <i class="fas fa-fw fa-wrench"></i>
-                <span>Inventario</span>
-            </a>
+                <a class="nav-link " href="utilities-other.html">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Inventario</span>
+                </a>
 
-        </li>
+            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -104,16 +104,32 @@
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Más opciones:</h6>
                         <a class="collapse-item" href="editarUsuario.html"> <i class="fas fa-solid fa-user-shield"></i>  Administrar clientes </a>
+
                     </div>
                 </div>
             </li>
 
             <!-- Nav Item - Charts -->
+
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePagess"
+                   aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-solid fa-user-astronaut"></i>
+                    <span>Tenicos</span>
+                </a>
+                <div id="collapsePagess" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Opciones:</h6>
+                        <a class="collapse-item"    href="TablaTecnicos.html"> <i class="fas fa-solid fa-users"></i>  Lista de Tecnicos </a>
+                        <a class="collapse-item" href="RegistroTecnico.html">   <i class="fas fa-solid fa-user-plus"></i>  Regristrar tecnico </a>
+                        <div class="collapse-divider"></div>
+
+                    </div>
+                </div>
             </li>
+
+
+
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
@@ -361,9 +377,9 @@
                                             <tr>
                                                 <th style="text-align: center">Id Servicio</th>
                                                 <th style="text-align: center"> Nombre del equipo</th>
-                                                <th style="text-align: center">Persona que entrega</th>
+                                                <th style="text-align: center">Cliente que entrega equipo</th>
                                                 <th style="text-align: center">Motivo</th>
-                                                <th style="text-align: center"> Fecha entrada</th>
+                                                <th style="text-align: center"> Fecha entrada del equipo</th>
                                                 <th style="text-align: center">Tecnico designado </th>
                                                 <th style="text-align: center">Comentarios</th>
                                             </tr>

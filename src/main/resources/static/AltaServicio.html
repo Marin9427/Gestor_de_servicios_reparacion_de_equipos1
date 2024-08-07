@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
 
@@ -19,7 +19,84 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <style>
 
+        h1 {
+        margin: 0 0 20px;
+        font-weight: 400;
+        color: #1c87c9;
+        }
+        p {
+        margin: 0 0 5px;
+        }
+        .main-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #1c87c9;
+        }
+        form {
+        padding: 25px;
+        margin: 25px;
+        box-shadow: 0 2px 5px #f5f5f5;
+        background: #f5f5f5;
+        }
+
+        .fa-envelope {
+        transform: rotate(-20deg);
+        }
+        .fa-at , .fa-mail-bulk{
+        transform: rotate(10deg);
+        }
+        input, textarea {
+        width: calc(100% - 18px);
+        padding: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #1c87c9;
+        outline: none;
+        }
+        input::placeholder {
+        color: #666;
+        }
+        select {
+         width: 300px; /* Ancho del select */
+         height: 35px; /* Altura del select */
+        }
+        button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: #1c87c9;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        }
+        button:hover {
+        background: #2371a0;
+        }
+        @media (min-width: 568px) {
+        .main-block {
+        flex-direction: row;
+        }
+        .left-part, form {
+        width: 50%;
+        }
+        .fa-envelope {
+        margin-top: 0;
+        margin-left: 20%;
+        }
+        .fa-at {
+        margin-top: -10%;
+        margin-left: 65%;
+        }
+        .fa-mail-bulk {
+        margin-top: 2%;
+        margin-left: 28%;
+        }
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -37,7 +114,6 @@
                 </div>
                 <div class="sidebar-brand-text mx-3">Reparacion Tecnica </div>
             </a>
-
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
@@ -138,6 +214,7 @@
                     <i class="fas fa-fw fa-table"></i>
                     <span>Tables</span></a>
             </li>
+
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -164,18 +241,7 @@
                     </button>
 
                     <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -363,69 +429,40 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Alta de usuarios</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Registrar Servicio</h1>
 
 
 
+                    <div class="main-block">
 
+                        <form action="/">
+                            <h1>Registrar Servicio</h1>
+                            <div class="info">
+                                 <p> Nombre del equipo: <input class="fname" type="text"  id="TxtNombre" name="Nombre" placeholder="Modelo completo del equipo"> </p>
 
-                    <form class="user">
-                        <div class="form-group row">
+                                <p> Nombre del cliente que Entrega: </p>
+                                <select name="nombre" id="selectNombres"> <option value="">Seleccionar cliente</option> </select>
 
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                 <input type="text" class="form-control form-control-user" id="IntNombre"
-                                       placeholder="Nombre" > </div>
-                                <div class="col-sm-6 mb-3 mb-sm-0">
-                                <input type="text" class="form-control form-control-user" id="IntApellido"
-                                       placeholder="Apellidos" >
-                            </div>
-                        </div>
+                                <p> Motivo:<input type="text"  id="TxtMotivo" name="name" placeholder="Motivo de reparacion"></p>
 
-                        <div class="form-group row">
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                <input type="text" class="form-control form-control-user"
-                                       id="IntTelefono" placeholder="Telefono" >
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control form-control-user"
-                                       id="IntTelefonoAlt" placeholder="Telefono Alterno" >
+                                <p> Fecha de Entrada del equipo: <input type="date" id="FechaT" name="fecha" >
+
+                                <p> Nombre del Tecnico designado : </p>
+                                <select name="nombre" id="selectTecnicos"> <option value="">Seleccionar Tecnico </option> </select>
+
                             </div>
 
-                        </div>
-                        <div class="form-group row">
-
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                <input type="text" class="form-control form-control-user" id="InpDireccion"
-                                       placeholder="Direccion" > </div>
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                <input type="text" class="form-control form-control-user" id="InpMunicipio"
-                                       placeholder="Municipio" >
+                            <p>Comentarios</p>
+                            <div>
+                                <textarea placeholder="Colocar todos los detalles del equipo como se reciba" id="Comentt" rows="4"></textarea>
                             </div>
-                        </div>
-
-                        <a onclick="RegistrarUsuario()" href="#" class="btn btn-primary btn-user btn-block">
-                            Registrar Usuario
-                        </a>
 
 
-                        <hr>
-
-                    </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                            <a onclick="RegistrarServicio()" href="#" class="btn btn-primary btn-user btn-block">
+                                Registrar servicio
+                            </a>
+                        </form>
+                    </div>
 
 
 
@@ -437,13 +474,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
-                    </div>
-                </div>
-            </footer>
+
             <!-- End of Footer -->
 
         </div>
@@ -487,10 +518,7 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
 
-
-    <!-- Page level custom scripts -->
-    <script src="js/AltaUsuario.js"></script>
-
+    <script src="js/AltaProceso.js"></script>
 
 </body>
 

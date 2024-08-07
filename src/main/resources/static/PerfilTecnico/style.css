@@ -3,11 +3,11 @@
     --primary-darker: #4F4DFE;
     --bg: #EFF3F4;
     --white: #FFF;
-    --profile-bg: #FFFFFD;
+    --profile-bg: #d0b28dd9;
     --socials-bg: #F9FAFC;
     --highlight-bg: #F9FAFC;
-    --text-bg: #878789;
-    --text: #797C83;
+    --text-bg: #0643d0;
+    --text: #0643d0;
     --border-color: #F4F4F4;
     --social-color: #6B6C6E;
     --active: #7774B5;
@@ -22,7 +22,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 10;
     box-sizing: border-box;
 }
 
@@ -68,7 +68,7 @@ body {
     max-width: 28rem;
     min-width: 20rem;
     margin: 0 auto;
-    gap: 0.75rem;
+    gap: 0.15rem;
     display: flex;
     flex-direction: column;
     align-items: center;

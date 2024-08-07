@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Entity
 @Data
 @AllArgsConstructor
@@ -35,6 +37,11 @@ public class Cliente
 
     @Column(name = "municipio")
     private String municipio;
+
+   // @OneToMany(mappedBy = "cliente")
+    //private List<Servicio> servicio;
+
+
 
 public Cliente(String nombre)
 {

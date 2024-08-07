@@ -17,6 +17,11 @@
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="PerfilTecnico/style.css">
+
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -36,60 +41,52 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">Reparacion Tecnica </div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="Inicio.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>Pendiente</span></a>
             </li>
+
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Interface
+                Gestion de equipos
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
+                   aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Reparacion</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="ReparacionProceso.html">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
+                        <h6 class="collapse-header">Opciones:</h6>
+                        <a class="collapse-item" href="AltaServicio.html" >  <i class="fas fa-solid fa-plus fa-bounce"></i> </i> Registrar nuevo servicio</a>
+                        <a class="collapse-item" href="ReparacionProceso.html">  <i class="fas fa-solid fa-spinner fa-spin"></i> En proceso</a>
+                        <a class="collapse-item" href="cards.html"> <i class="fas fa-duotone fa-flag-checkered fa-bounce"></i> Finalizados</a>
                     </div>
                 </div>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link " href="utilities-other.html">
                     <i class="fas fa-fw fa-wrench"></i>
-                    <span>Utilities</span>
+                    <span>Inventario</span>
                 </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
-                    </div>
-                </div>
+
             </li>
 
             <!-- Divider -->
@@ -101,33 +98,46 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
-                    aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                   aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-solid fa-user"></i>
+                    <span>Clientes</span>
                 </a>
-                <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
-                    data-parent="#accordionSidebar">
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                        <h6 class="collapse-header">Opciones:</h6>
+                        <a class="collapse-item"    href="ListadoClientes.html"> <i class="fas fa-solid fa-users"></i>  Lista de clientes </a>
+                        <a class="collapse-item" href="Altausuarios.html">   <i class="fas fa-solid fa-user-plus"></i>  Regristrar cliente</a>
                         <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item active" href="blank.html">Blank Page</a>
+                        <h6 class="collapse-header">Más opciones:</h6>
+                        <a class="collapse-item" href="editarUsuario.html"> <i class="fas fa-solid fa-user-shield"></i>  Administrar clientes </a>
+
                     </div>
                 </div>
             </li>
 
             <!-- Nav Item - Charts -->
+
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePagess"
+                   aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-solid fa-user-astronaut"></i>
+                    <span>Tenicos</span>
+                </a>
+                <div id="collapsePagess" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Opciones:</h6>
+                        <a class="collapse-item"    href="TablaTecnicos.html"> <i class="fas fa-solid fa-users"></i>  Lista de Tecnicos </a>
+                        <a class="collapse-item" href="RegistroTecnico.html">   <i class="fas fa-solid fa-user-plus"></i>  Regristrar tecnico </a>
+                        <div class="collapse-divider"></div>
+
+                    </div>
+                </div>
             </li>
+
+
+
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
@@ -365,7 +375,87 @@
 
 
 
+                    <div class="profile">
+                        <header class="profile__header">
+                            <div class="profile__highlight__wrapper">
+                                <div class="profile__highlight">
+                                </div>
+                            </div>
+                            <div class="profile__avatar">
+                                <img src="PerfilTecnico/assets/perrito.jpg" loading="lazy" alt="Mentor profile">
+                            </div>
+                            <div class="profile__highlight__wrapper">
+                                <div class="profile__highlight">
 
+                                </div>
+
+                            </div>
+                        </header>
+                        <div class="profile__name">
+                            <h2 id="LblNombre"> <img src="PerfilTecnico/assets/verified.svg" alt="Verified Ticker"></h2> <br>
+                            <p id="LblApellido" > </p>
+                        </div>
+                        <ul class="social-links">
+
+                        </ul>
+                        <main>
+                            <div class="tabs-wrapper">
+                                <ul class="tabs">
+                                    <li class="active">
+                                        <a id="tab1" href="#about">Telefono <br> Contacto</a>
+                                    </li>
+                                    <li>
+                                        <a id="tab2" href="#skills">area <br> laboral</a>
+                                    </li>
+                                    <li>
+                                        <a id="tab3" href="#reviews">Sucursal</a>
+                                    </li>
+                                    <li id="active-bg"></li>
+                                </ul>
+                            </div>
+                            <div id="tab1-content" class="tab-content tab-content--active">
+
+                                <h3>  Telefono : <input type="text" id="Txtelefono" size="30"> </h3>
+                                <h3>  Telefono Alt:  <input type="text" id="TxtelefonoAlt" size="30"> </h3>
+
+                            </div>
+                            <div id="tab2-content" class="tab-content">
+
+                                <ul class="content-links">
+                                    <li>
+                                        <a>
+                                            -
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#javascript">
+                                            -
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            -
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a >
+                                            -
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab3-content" class="tab-content">
+
+                                <ul class="reviews">
+                                    <li>
+                                        <h2 id="LblSucursal">  </h2>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </main>
+
+                    </div>
 
 
 
@@ -429,7 +519,7 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
 
-
+    <script src="PerfilTecnico/PerilTecnico.js"></script>
 
 </body>
 
