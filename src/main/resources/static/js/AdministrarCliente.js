@@ -27,7 +27,7 @@ async function AdministrarUsuario() {
     }
     document.querySelector('#ListadoClienteEditar tbody').innerHTML = listadohtml;
 
-    // Asignar el event listener a los botones "Modificar Usuario"
+
     const botonesModificar = document.querySelectorAll(".btn-prueba-modal");
     botonesModificar.forEach(boton => {
         boton.addEventListener("click", () => {
@@ -65,7 +65,6 @@ async function EditarTexto(id) {
         modal.close();
     });
 
-    ///////////////////////////////////////////////////////////////////////////
 btnGuardarModal.addEventListener("click", async () => {
     const Modificarlo = {
         nombre: document.getElementById('txtNombre').value,
@@ -87,14 +86,14 @@ btnGuardarModal.addEventListener("click", async () => {
         });
 
         if (response.ok) {
-            // La solicitud se completó con éxito, puedes hacer algo aquí si lo deseas
+
            alert("Usuario modificado exitosamente");
         } else {
-            // Hubo un problema con la solicitud, maneja el error aquí
+
             console.error("Hubo un problema al modificar el usuario");
         }
     } catch (error) {
-        // Hubo un error en la solicitud fetch
+
         console.error("Error al intentar modificar el usuario:", error);
     }
 
@@ -103,6 +102,6 @@ btnGuardarModal.addEventListener("click", async () => {
 
 });
 
-    /////////////////////////////////////////////////
+
  };
 

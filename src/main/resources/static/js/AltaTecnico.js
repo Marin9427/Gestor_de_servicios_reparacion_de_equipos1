@@ -4,6 +4,8 @@ $(document).ready(function() {
 
 async function RegistrarTecnico()
 {
+    alert("Tecnico agregado Exitosamente");
+
 let datos ={};
 
 datos.nombre=document.getElementById('IntNombreT').value;
@@ -25,9 +27,9 @@ const rawResponse = await fetch('/api/registrartecnico', {
     },
     body: JSON.stringify(datos)
   });
-  //const content = await rawResponse.json();
+
  location.reload();
-  //console.log(content);
+
 
 }
 

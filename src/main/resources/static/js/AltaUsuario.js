@@ -22,9 +22,9 @@ let datos= {};
       'Content-Type': 'application/json'
     },
 
-    body: JSON.stringify(datos) // Es un método de JavaScript que toma un objeto JavaScript y lo convierte en una cadena de texto JSON
+    body: JSON.stringify(datos)
 
   });
 
-    location.reload(); // carga de nuevo la pagina una vez haga la funcion
+    location.reload();
 }

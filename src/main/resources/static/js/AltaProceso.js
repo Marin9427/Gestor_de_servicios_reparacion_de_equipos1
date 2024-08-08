@@ -45,11 +45,11 @@ async function RegistrarServicio() {
             idCliente: clienteSelect
         },
         tecnico: {
-            idTecnico: tecnicoSelect // Corregido aquí
+            idTecnico: tecnicoSelect
         }
     };
 
-    try {
+
         const response = await fetch('/api/servicios/Registrar', {
             method: 'POST',
             headers: {
@@ -58,17 +58,6 @@ async function RegistrarServicio() {
             },
             body: JSON.stringify(datos)
         });
+        location.reload();
 
-        // Handle response if needed
-        console.log('Respuesta del servidor:', response);
-
-        // Optionally redirect or update UI instead of reloading the entire page
-        // window.location.href = '/ruta/nueva';
-        // updateUI();
-
-        location.reload(); // Solo como ejemplo, evalúa si realmente necesitas recargar la página
-    } catch (error) {
-        console.error('Error al registrar el servicio:', error);
-        // Handle error: mostrar mensaje al usuario, revertir cambios, etc.
-    }
 }

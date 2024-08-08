@@ -29,35 +29,17 @@ public class ServicioService
         List<Cliente> nombresFormateadoss = new ArrayList<>();
         List<Object[]> nombresApellidoss = servicioRepo.ListaServicioNomvbre();
         for (Object[] nombreApellidoo : nombresApellidoss) {
-            // Obtener el ID, el nombre y el apellido de la lista de resultados
-            int id = (int) nombreApellidoo[0]; // Convertir el valor a entero
+            int id = (int) nombreApellidoo[0];
             String nombre = (String) nombreApellidoo[1];
             String apellido = (String) nombreApellidoo[2];
-
-            // Crear una instancia de Tecnico con el ID, el nombre y el apellido
             Cliente cliente = new Cliente();
             cliente.setIdCliente(id);
             cliente.setNombre(nombre);
             cliente.setApellido(apellido);
-
-            // Agregar el objeto Tecnico a la lista
             nombresFormateadoss.add(cliente);
         }
         return nombresFormateadoss;
 
- /**
-  *
-  *
-  *
-  *
-  *
-        List<String> nombresFormateados = new ArrayList<>();
-        List<Object[]> nombresApellidos = servicioRepo.ListaServicioNomvbre();
-        for (Object[] nombreApellido : nombresApellidos) {
-            String nombreCompleto = nombreApellido[0] + " " + nombreApellido[1];
-            nombresFormateados.add(nombreCompleto);
-        }
-        return nombresFormateados;**/
     }
 
 
@@ -65,26 +47,17 @@ public class ServicioService
         List<Tecnico> nombresFormateadoss = new ArrayList<>();
         List<Object[]> nombresApellidoss = servicioRepo.ListaServicioNomvbreT();
         for (Object[] nombreApellidoo : nombresApellidoss) {
-            // Obtener el ID, el nombre y el apellido de la lista de resultados
-            int id = (int) nombreApellidoo[0]; // Convertir el valor a entero
+            int id = (int) nombreApellidoo[0];
             String nombre = (String) nombreApellidoo[1];
             String apellido = (String) nombreApellidoo[2];
-
-            // Crear una instancia de Tecnico con el ID, el nombre y el apellido
             Tecnico tecnico = new Tecnico();
             tecnico.setIdTecnico(id);
             tecnico.setNombre(nombre);
             tecnico.setApellido(apellido);
-
-            // Agregar el objeto Tecnico a la lista
             nombresFormateadoss.add(tecnico);
         }
         return nombresFormateadoss;
     }
-
-
-
-
     public void addService(Servicio servicio) {
         servicioRepo.agregarservicio(servicio);
     }

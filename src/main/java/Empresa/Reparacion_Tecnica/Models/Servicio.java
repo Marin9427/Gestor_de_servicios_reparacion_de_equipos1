@@ -43,10 +43,10 @@ public class Servicio
     private String detalles;
 
     @Column(columnDefinition = "DATETIME" , name = "fechaEntrada" ,updatable = false , nullable = false)
-    private LocalDate fechaEntrada; //se puso LocalDate en lugar de DATE
+    private LocalDate fechaEntrada;
 
     @Column(columnDefinition = "DATETIME" , name = "fechaSalida" ,updatable = false )
-    private LocalDate fechaSalida;  //se puso LocalDate en lugar de DATE
+    private LocalDate fechaSalida;
 
 
 }

@@ -41,9 +41,6 @@ public class Tecnico
     @Column(name = "diaDescanso")
     private String DiaDescanso;
 
-   // @OneToMany(mappedBy = "tecnico")
-   // private List<Servicio> servicio;
-
 
 public  Tecnico (String nombre )
 {
